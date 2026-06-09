@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class Borrowing
 {
-    public int BorrowingId { get; set; }
+    public int? BorrowingId { get; set; }
     public DateTime BorrowingDate { get; set; }
     public DateTime? ReturnDate { get; set; }
     [MaxLength(50)]
