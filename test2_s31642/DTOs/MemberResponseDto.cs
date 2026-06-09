@@ -13,7 +13,7 @@ public class BorrowingResponseDto
 {
     public int BorrowingId { get; set; }
     public BookResponseDto Book { get; set; } = new BookResponseDto();
-    public DateTime BorrowDate { get; set; }
+    public DateTime BorrowingDate { get; set; }
     public DateTime? ReturnDate { get; set; }
     public string Status { get; set; } = string.Empty;
 }

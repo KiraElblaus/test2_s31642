@@ -9,7 +9,7 @@ public class Author
     [MaxLength(100)]
     public string LastName { get; set; } = string.Empty;
     [MaxLength(100)]
-    public string Email { get; set; } = string.Empty;
+    public string? Email { get; set; } = string.Empty;
     [MaxLength(50)]
     public string Country { get; set; } = string.Empty;
     public int BirthYear { get; set; }

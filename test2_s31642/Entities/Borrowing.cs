@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 public class Borrowing
 {
     public int BorrowingId { get; set; }
-    public DateTime BorrowDate { get; set; }
+    public DateTime BorrowingDate { get; set; }
     public DateTime? ReturnDate { get; set; }
     [MaxLength(50)]
     public string Status { get; set; } = string.Empty;
