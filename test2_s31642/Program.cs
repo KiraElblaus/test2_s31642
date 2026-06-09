@@ -1,5 +1,5 @@
 using test2_s31642.Data;
-// using test2_s31642.Services;
+using test2_s31642.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-// builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IBorrowingService, BorrowingService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
